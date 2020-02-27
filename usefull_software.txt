@@ -1,0 +1,5 @@
+# sound switcher
+https://www.omgubuntu.co.uk/2014/02/sound-switcher-app-ubuntu
+
+# bound extra mouse buttons to control volume
+https://askubuntu.com/questions/960044/how-can-i-configure-my-mouse-side-buttons-to-control-volumeubuntu-16-04
