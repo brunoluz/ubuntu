@@ -13,3 +13,10 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 # - Flash plugin
 #  - codecs for common audio and video files
 sudo apt-get install ubuntu-restricted-extras -y
+sudo apt-get uninstall ubuntu-restricted-extras -y
+
+# add open in terminal
+cp open-in-terminal.sh /home/bruno/.local/share/nautilus/scripts
+
+# add open in vs code
+cp open-in-code.sh /home/bruno/.local/share/nautilus/scripts
