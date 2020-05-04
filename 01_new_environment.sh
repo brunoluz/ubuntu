@@ -18,3 +18,5 @@ sudo apt-get remove ubuntu-restricted-extras -y
 # add open in terminal
 cp open-in-terminal.sh /home/bruno/.local/share/nautilus/scripts
 
+# click to minimize on dock launcher
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
