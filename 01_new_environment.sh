@@ -15,6 +15,7 @@ timedatectl set-local-rtc 1 --adjust-system-clock
 sudo apt-get install ubuntu-restricted-extras -y
 sudo apt-get remove ubuntu-restricted-extras -y
 sudo apt-get install chrome-gnome-shell -y
+sudo apt-get install synaptic -y
 
 # add open in terminal
 cp open-in-terminal.sh /home/bruno/.local/share/nautilus/scripts
