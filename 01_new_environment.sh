@@ -16,6 +16,7 @@ sudo apt-get install ubuntu-restricted-extras -y
 sudo apt-get remove ubuntu-restricted-extras -y
 sudo apt-get install chrome-gnome-shell -y
 sudo apt-get install synaptic -y
+sudo apt install gnome-tweaks -y
 
 # add open in terminal
 cp open-in-terminal.sh /home/bruno/.local/share/nautilus/scripts
