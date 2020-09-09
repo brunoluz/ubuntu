@@ -1,4 +1,4 @@
-Applications -> System tools -> Settings -> keyboard -> Custom Shortcute
+Applications -> System tools -> Settings -> keyboard -> Custom Shortcuts
 
 name: explorer
 command: nautilus -w
