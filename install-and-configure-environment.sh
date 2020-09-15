@@ -23,3 +23,10 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
 
 # install chrome
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb -y && rm -f google-chrome-stable_current_amd64.deb*
+
+# instal vscode
+sudo snap install --classic code
+
+# set desktop as solid color
+gsettings set org.gnome.desktop.background picture-uri ''
+gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
