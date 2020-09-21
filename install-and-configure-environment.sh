@@ -30,3 +30,10 @@ sudo snap install --classic code
 # set desktop as solid color
 gsettings set org.gnome.desktop.background picture-uri ''
 gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
+
+# custom path
+mkdir ~/.custom_path
+echo "PATH DEFAULT=\${PATH}:$( getent passwd "$USER" | cut -d: -f6 )/.custom_path" >> ~/.pam_environment
+ln -s "$(which google-chrome)" ~/.custom_path/chrome
+ln -s "$(which gnome-session-quit)" ~/.custom_path/logout
+
