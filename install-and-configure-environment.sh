@@ -35,5 +35,5 @@ gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
 mkdir ~/.custom_path
 echo "PATH DEFAULT=\${PATH}:$( getent passwd "$USER" | cut -d: -f6 )/.custom_path" >> ~/.pam_environment
 ln -s "$(which google-chrome)" ~/.custom_path/chrome
-ln -s "$(which gnome-session-quit)" ~/.custom_path/logout
+ln -s "$(which gnome-session-quit)" ~/.custom_path/logoff
 
