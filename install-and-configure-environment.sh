@@ -37,3 +37,5 @@ echo "PATH DEFAULT=\${PATH}:$( getent passwd "$USER" | cut -d: -f6 )/.custom_pat
 ln -s "$(which google-chrome)" ~/.custom_path/chrome
 ln -s "$(which gnome-session-quit)" ~/.custom_path/logoff
 
+# open with code 
+wget -qO- https://raw.githubusercontent.com/brunoluz/code-nautilus/master/install.sh | bash
