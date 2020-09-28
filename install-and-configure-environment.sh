@@ -41,3 +41,13 @@ Control_L, Down, Control_L|Button5
 Shift_L,   Up,   Shift_L|Button4
 Shift_L,   Down, Shift_L|Button5" >> ~/.imwheelrc
 echo "imwheel" >> ~/.profile
+
+# custom path
+mkdir ~/.custom_path
+echo "PATH DEFAULT=\${PATH}:$( getent passwd "$USER" | cut -d: -f6 )/.custom_path" >> ~/.pam_environment
+ln -s "$(which google-chrome)" ~/.custom_path/chrome
+ln -s "$(which gnome-session-quit)" ~/.custom_path/logoff
+
+# open with code 
+wget -qO- https://raw.githubusercontent.com/brunoluz/code-nautilus/master/install.sh | bash
+
