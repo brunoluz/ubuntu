@@ -39,3 +39,13 @@ ln -s "$(which gnome-session-quit)" ~/.custom_path/logoff
 
 # open with code 
 wget -qO- https://raw.githubusercontent.com/brunoluz/code-nautilus/master/install.sh | bash
+
+# mcdir command
+cat << EOF >> .bashrc 
+mcdir ()
+{
+  mkdir -p -- "$1" &&
+  cd -P -- "$1"
+}
+EOF
+
