@@ -31,6 +31,17 @@ sudo snap install --classic code
 gsettings set org.gnome.desktop.background picture-uri ''
 gsettings set org.gnome.desktop.background primary-color 'rgb(66, 81, 100)'
 
+# imwhell 
+sudo apt install imwheel -y
+echo "\".*\"
+None,      Up,   Button4, 2
+None,      Down, Button5, 2
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5" >> ~/.imwheelrc
+echo "imwheel" >> ~/.profile
+
 # custom path
 mkdir ~/.custom_path
 echo "PATH DEFAULT=\${PATH}:$( getent passwd "$USER" | cut -d: -f6 )/.custom_path" >> ~/.pam_environment
@@ -48,4 +59,3 @@ mcdir ()
   cd -P -- "$1"
 }
 EOF
-
