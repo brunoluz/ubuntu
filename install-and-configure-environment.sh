@@ -52,10 +52,12 @@ ln -s "$(which gnome-session-quit)" ~/.custom_path/logoff
 wget -qO- https://raw.githubusercontent.com/brunoluz/code-nautilus/master/install.sh | bash
 
 # mcdir command
-cat << EOF >> .bashrc 
+cat << EOF >> ~/.bashrc 
+
+# mkdir and cd
 mcdir ()
 {
-  mkdir -p -- "$1" &&
-  cd -P -- "$1"
+  mkdir -p -- "\$1" &&
+  cd -P -- "\$1"
 }
 EOF
