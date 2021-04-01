@@ -7,4 +7,5 @@ shortcut: super + e
 Applications -> System tools -> Settings -> keyboard -> Keyboard Shortcuts
 
 Show the run command prompt: super + r
+Copy a screenshot of an area to clipboard: super + shift + s
 
